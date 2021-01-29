@@ -1,2 +1,0 @@
-# Article-Summarizer
-Summarizes articles

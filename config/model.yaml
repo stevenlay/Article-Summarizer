@@ -1,0 +1,10 @@
+model:
+  model_name: bart
+
+bart:
+  bart_model: facebook/bart-large-cnn
+  max_seq_len: 1024
+  max_len: 175
+  min_len: 40
+  len_penalty: 2.0
+  num_beams: 4

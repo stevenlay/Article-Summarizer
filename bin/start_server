@@ -1,0 +1,3 @@
+#!/bin/sh
+
+uvicorn text_summarizer.api:app --reload

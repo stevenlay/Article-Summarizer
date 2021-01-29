@@ -3,6 +3,7 @@ model:
 
 bart:
   bart_model: facebook/bart-large-cnn
+  pretrained_model: assets/model_state_dict.bin
   max_seq_len: 1024
   max_len: 175
   min_len: 40

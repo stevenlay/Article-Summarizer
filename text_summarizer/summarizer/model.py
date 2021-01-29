@@ -17,6 +17,7 @@ class Model:
             model_params['bart']['bart_model'])
 
         summarizer = TextSummarizer()
+        # summarizer.load_state_dict(torch.load(model_params['bart']['pretrained_model']], map_location=self.device))
         summarizer = summarizer.eval()
         self.model = summarizer.to(self.device)
 
@@ -32,8 +33,10 @@ class Model:
         return summary
 
 
+# Dependency Injection via FastAPI to inject model in api.py
 model = Model()
 
 
+# Singleton function used for API handler
 def get_model():
     return model
